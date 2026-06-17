@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 250px;
+    user-select: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 47px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.logotipo {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    margin: 0px 0px 0px -200px;
+}
+
+.contactus {
+    text-align: center;
+}
+
+
+.contactinfo {
+    background-color: black;
+    margin: 70px 30px 129px 30px;
+    color: white;
+    width: 450px;
+    height: 647px;
+    min-width: 400px;
+    border-radius: 15px;
+    padding: 40px;
+    flex-shrink: 0;
+
+}
+
+.itemdecontato {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.cabecalho {
+    margin-bottom: 111px;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 24px;
+    margin-left: 0px;
+    margin-top: 200px;
+
+}
+
+.redes-sociais img {
+    width: 30px;
+    height: 30px;
+    user-select: none;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+}
+
+.allform {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 111px 0px;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    user-select: none;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo input {
+    border: none;
+    border-bottom: 1px solid #999;
+    padding: 10px 0;
+    outline: none;
+}
+
+.Form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    width: 600px;
+
+}
+
+form>div:nth-child(5),
+.send-message {
+    grid-column: 1 / -1;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: black;
+    vertical-align: middle;
+}
+
+.send-message {
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    box-shadow: none;
+    width: 214px;
+    height: 54px;
+    margin: 0px 0px 0px 580px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+
+}
+
+#message {
+    color: #000000;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #999;
+    outline: none;
+    resize: none;
+    height: 30px;
+    padding: 5px 0;
+    font-family: inherit;
+    margin-top: 8px;
+
+}
+
+#message::placeholder {
+    color: #999;
+    font-size: 14px;
+}
+
+.subject-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.subject-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+.subject-item input {
+    margin: 0;
+}
+
+.subject h3 {
+    margin-bottom: 12px;
+}
+
+label[for="message"] {
+    display: block;
+    margin-top: 50px;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.menu-mobile {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-mobile span {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 2px;
+}
+
+button:hover {
+    opacity: 0.4;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+a:hover {
+    opacity: 0.3;
+}
+
+a:active {
+    opacity: 0.8;
+}
+
+h1 {
+    user-select: none;
+}
+
+p {
+    user-select: none;
+}
+
+.imgtext {
+    user-select: none;
+}
+
+h2 {
+    user-select: none;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        display: none;
+    }
+
+    header {
+        position: relative;
+        padding: 20px;
+    }
+
+    .menu-mobile {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0;
+    }
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactinfo {
+        width: 90%;
+        min-width: 0;
+        text-align: center;
+        margin-left: 30px;
+    }
+
+    .contactus {
+        text-align: center;
+        font-size: smaller;
+
+    }
+
+    .Form {
+        width: 100%;
+        margin-left: 0;
+        padding: 0 18px;
+    }
+
+    .Form form {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        width: 100%;
+        margin-right: center;
+        height: auto;
+
+    }
+
+    .send-message {
+        width: 100%;
+        margin: 0;
+        border: none;
+        padding: 0;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .logotipo {
+        margin: 0;
+    }
+
+    .itemdecontato img {
+        flex-shrink: 0;
+    }
+
+    .itemdecontato span {
+        word-break: break-word;
+    }
+
+    .redes-sociais {
+        margin: 80px 0 0 0;
+        justify-content: center;
+    }
+
+    .subject {
+        display: grid;
+        grid-template-columns: auto 1fr auto 1fr;
+        gap: 10px 8px;
+        align-items: center;
+    }
+
+    .subject h3,
+    .subject label[for="message"],
+    .subject #message {
+        grid-column: 1 / -1;
+    }
+
+    .subject-item {
+        display: inline-flex;
+        align-items: center;
+        white-space: nowrap;
+    }
+
+    .subject-item label {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    #message {
+        min-height: 120px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .allform {
+        width: 100%;
+        grid-template-columns: 1fr;
+        margin: 20px 0 0 0;
+        padding: 0;
+
+    }
+
+
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .contact-container,
+    .allform,
+    .Form,
+    .Form form {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .itemdecontato {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .cabecalho {
+        font-size: small;
+    }
+
+
+
+
+
+}
